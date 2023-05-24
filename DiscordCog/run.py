@@ -1,6 +1,6 @@
 from discord.ext import commands as discordCommands
 import discord as discordBot,os
-from PIL import Image, ImageDraw, ImageFont, ImageChops
+from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 from .profile import circle
 from tabulate import tabulate
