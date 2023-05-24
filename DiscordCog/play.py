@@ -23,7 +23,7 @@ class play(discordCommands.Cog):
         URL = info["formats"][0]["url"]
 
         # Play the audio in the voice channel
-        voice_sWQfMFyt.play(discord.FFmpegPCMAudio(URL))
+        voice_sWQfMFyt.play(discordBot.FFmpegPCMAudio(URL))
 
         # Create an embed with the information of the song being played
         embed = discordBot.Embed(title=f"{info['title']}", color=discordBot.Color.green())

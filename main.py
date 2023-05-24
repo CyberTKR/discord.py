@@ -14,4 +14,4 @@ async def setup_hook():
     else:
         print("Unable to load pycache folder.")
 
-sWQfMFyt.run("DISCORD_TOKEN")
+sWQfMFyt.run("BOT_TOKEN")

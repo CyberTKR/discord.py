@@ -37,7 +37,7 @@ class events(discordCommands.Cog):
             
     @discordCommands.Cog.listener()
     async def on_member_join(self,member):
-        channel = discordBot.utils.get(member.guild.channels, name='join')
+        channel = discordBot.utils.get(member.guild.channels, name='join-leave') # JOIN-LEAVE CHANNEL NAME
         background = Image.open("./resimler/wel.jpg").convert("RGBA")
         pfp = member.avatar
         data = BytesIO(await pfp.read())
@@ -58,7 +58,7 @@ class events(discordCommands.Cog):
 
     @discordCommands.Cog.listener()
     async def on_member_remove(self,member):
-        channel = discordBot.utils.get(member.guild.channels, name='join')
+        channel = discordBot.utils.get(member.guild.channels, name='join-leave') # JOIN-LEAVE CHANNEL NAME
         await channel.send(f'Bye bye {member.mention}!')
         
 async def setup(sWQfMFyt):
