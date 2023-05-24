@@ -9,7 +9,7 @@ class serverinfo(discordCommands.Cog):
     @slashCommand.command(name="serverinfo", description="🤖 Serverinfo")
     async def serverinfo(self,tolga: discordBot.Interaction):
         server = tolga.guild
-        embed = discordBot.Embed(title = f"{server.name} Info", description = "Information of this Server", color = discord.Colour.blue())
+        embed = discordBot.Embed(title = f"{server.name} Info", description = "Information of this Server", color = discordBot.Color.blue())
         embed.add_field(name = '🆔Server ID', value = f"{server.id}", inline = True)
         embed.add_field(name = '📆Created On', value = server.created_at.strftime("%b %d %Y"), inline = True)
         embed.add_field(name = '👑Owner', value = f"{server.owner}", inline = True)
