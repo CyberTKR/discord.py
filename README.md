@@ -4,8 +4,6 @@
   <img align="left" alt="CyberTKR" width="40px" src="https://github.com/CyberTKR/CyberTKR/blob/main/img/discord.svg" />
 </a>
 
-# discord.py
-
 ## How to run?
  
 - Adim 1: 
